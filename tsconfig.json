@@ -2,13 +2,17 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
+    "strict": true, 
+    "esModuleInterop": true, 
+    "skipLibCheck": true, 
+    "forceConsistentCasingInFileNames": true, 
     "outDir": "dist",
-    "rootDir": "./",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-
+    "rootDir": "./service_users-history", 
+    "baseUrl": "./service_users-history",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   },
-  "include": ["./service_users/**/*.ts", "./service_users-history/**/*.ts"],
-  "exclude": ["node_modules"],
+  "include": ["service_users-history/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
